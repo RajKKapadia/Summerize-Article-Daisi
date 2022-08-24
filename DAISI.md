@@ -9,7 +9,7 @@ The technology I have used are:
 ```python
 import pydaisi as pyd
 
-summerize_article = pyd.Daisi('Summerize Article')
+summerize_article = pyd.Daisi('rajkkapadia/Summerize Article')
 article = '''This is a sample article for the Daisi. The summary of this article is generated using Facebook's BERT Large CNN model. The Daisi is developed using Hugging Face.'''
 result = summerize_article.get_article_summary(article).value
 
