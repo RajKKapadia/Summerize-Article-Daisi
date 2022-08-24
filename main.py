@@ -1,4 +1,3 @@
-from re import A
 from transformers import pipeline
 import streamlit as st
 
