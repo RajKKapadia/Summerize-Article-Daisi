@@ -6,18 +6,15 @@ summarizer = pipeline('summarization', model='facebook/bart-large-cnn')
 min_length = 30
 
 def get_article_summary(article: str) -> dict:
-    ''' Get the article summary.\n
-        This function will provide a summary of an article/text, it uses "facebook/bart-large-cnn"
-        to generate the summary.\n
+    '''
+    Get the article summary in minimum word, this function will provide a summary of an article/text, 
+    it uses "facebook/bart-large-cnn" to generate the summary. This function will take an article/text as an input. 
+    The output of this function will be an object and it will have three things, the status of the response, 
+    either 0 or 1, message about the response, and last the summary text.
 
-        Parameters:
-        - article (string): this is the article that will be summerized\n
-        
-        Return:
-        - this function will return a dict, it will have the following keys:\n
-            status - 1 for success, 0 for error, -1 for any input error\n
-            message - message\n
-            summary_text - None for error, otherwise string
+    :param article(str): this is the article that will be summerized
+    
+    :return object: Result of the Bert model
     '''
     try:
         words = article.split(' ')
