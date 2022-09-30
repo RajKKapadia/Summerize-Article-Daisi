@@ -1,5 +1,5 @@
 # The Very First Daisi™ Hackathon
-This is my attemt to this competition. I have created an appllication that will summerize a piece of text into minimum simple words.
+This is my attemt to this competition. I have created an appllication that will summerize a piece of text into minimum simple words. This application takes advantage of a model from Facebook AI, Huggin Face, and Transformers.
 
 The technology I have used are:
 * [Transformers](https://github.com/huggingface/transformers)
